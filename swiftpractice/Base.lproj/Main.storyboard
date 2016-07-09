@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swiftpractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="押せ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcP-j7-FHg">
+                                <rect key="frame" x="283" y="368" width="34" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="zKj-FX-m0m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kaede_is_god" translatesAutoresizingMaskIntoConstraints="NO" id="50l-pd-7i1">
+                                <rect key="frame" x="180" y="217" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="RYl-SQ-70b"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Md-kN-4KF">
+                                <rect key="frame" x="269" y="406" width="63" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3H6-Os-4XA"/>
+                                </constraints>
+                                <state key="normal" title="Buy nuw!"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TJf-id-gKa"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="殺伐としたアプリに小泉花陽が！！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQi-Zn-h3K">
+                                <rect key="frame" x="164" y="165" width="272" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Erk-si-GQV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Thj-Eg-3Fd">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dY8-nj-xME"/>
+                                    <barButtonItem title="画像変更" id="Xe3-Ql-cFP">
+                                        <connections>
+                                            <action selector="selectImage:" destination="BYZ-38-t0r" id="xR6-Q7-syT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vSN-G0-0CV"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EQi-Zn-h3K" firstAttribute="centerX" secondItem="50l-pd-7i1" secondAttribute="centerX" id="3bt-7o-VYW"/>
+                            <constraint firstItem="Thj-Eg-3Fd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4DW-zg-3e9"/>
+                            <constraint firstItem="EQi-Zn-h3K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="145" id="65d-Yf-YwL"/>
+                            <constraint firstItem="Thj-Eg-3Fd" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="DbP-vn-7NF"/>
+                            <constraint firstItem="YcP-j7-FHg" firstAttribute="centerX" secondItem="4Md-kN-4KF" secondAttribute="centerX" id="ESs-8u-a11"/>
+                            <constraint firstItem="50l-pd-7i1" firstAttribute="centerX" secondItem="YcP-j7-FHg" secondAttribute="centerX" id="G2S-NR-B3h"/>
+                            <constraint firstItem="50l-pd-7i1" firstAttribute="top" secondItem="EQi-Zn-h3K" secondAttribute="bottom" constant="31" id="HrS-h4-Amd"/>
+                            <constraint firstItem="Thj-Eg-3Fd" firstAttribute="centerX" secondItem="4Md-kN-4KF" secondAttribute="centerX" id="RV6-DJ-r8b"/>
+                            <constraint firstItem="YcP-j7-FHg" firstAttribute="top" secondItem="50l-pd-7i1" secondAttribute="bottom" constant="23" id="d7i-9E-yoW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4Md-kN-4KF" secondAttribute="bottom" constant="164" id="jpP-iZ-rvs"/>
+                            <constraint firstItem="EQi-Zn-h3K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k3a-qH-nqY"/>
+                            <constraint firstItem="4Md-kN-4KF" firstAttribute="top" secondItem="YcP-j7-FHg" secondAttribute="bottom" constant="17" id="zm5-Xp-lg7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="4Md-kN-4KF" id="ksl-ad-WBT"/>
+                        <outlet property="charactorImage" destination="50l-pd-7i1" id="0Mv-nr-095"/>
+                        <outlet property="label" destination="YcP-j7-FHg" id="Vgy-Mi-IXr"/>
+                        <outlet property="mainTitle" destination="EQi-Zn-h3K" id="xqS-Im-NkG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="235"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kaede_is_god" width="2420" height="1554"/>
+    </resources>
+</document>
